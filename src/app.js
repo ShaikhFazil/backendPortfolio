@@ -34,8 +34,8 @@ app.use(cookieParser());
 app.use(mongoSanitize());
 if (!env.isProd) app.use(morgan('dev'));
 
-app.get('/health', (_req, res) =>
-  res.json({ success: true, data: { status: 'ok', uptime: process.uptime() } })
+app.get('/', (_req, res) =>
+  res.json({ success: true, data: { status: 'ok, New changes are deployed', uptime: process.uptime() } })
 );
 
 app.use('/api', apiLimiter, routes);

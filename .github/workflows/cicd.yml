@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - '**.md'
+  workflow_dispatch:
 
 jobs:
   build:
@@ -60,3 +63,6 @@ jobs:
             -e CLOUDINARY_FOLDER -e MAX_IMAGE_SIZE_MB -e MAX_PDF_SIZE_MB \
             -e ADMIN_EMAIL -e ADMIN_PASSWORD -e ADMIN_NAME \
             fazilshaikh24/backendportfolio:latest
+
+      - name: Clean up old images
+        run: docker image prune -f

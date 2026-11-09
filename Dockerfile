@@ -1,7 +1,14 @@
-FROM node:20.18-alpine AS deps
+FROM node:20.18-alpine
+
 WORKDIR /app
-COPY package.json ./
-RUN npm install
+
+COPY package*.json ./
+RUN npm ci --omit=dev
+
 COPY . .
+
+ENV NODE_ENV=production
 EXPOSE 5000
-CMD [ "npm", "run", "start" ]
+
+USER node
+CMD ["npm", "run", "start"]
