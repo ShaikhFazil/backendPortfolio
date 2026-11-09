@@ -1,0 +1,278 @@
+{
+  "profile": {
+    "name": "Fazil Shaikh",
+    "title": "Full Stack Developer & Generative AI Engineer",
+    "tagline": "LLMs, LangChain and LangGraph, wired into products people actually use.",
+    "summary": "Full Stack Developer and Generative AI Engineer with 3.5+ years in travel, fintech, and e-commerce. Led a GenAI chatbot launch that grew guest self-service by 25%, and made a booking site 40% faster.",
+    "bio": "I build the whole thing: the React front end people touch, the Node services behind it, and increasingly the LLM layer that sits in between.\n\nMost of my work has lived in travel, fintech and e-commerce, where the brief is rarely \"make it pretty\" and usually \"make it fast, make it correct, and ship it this sprint\". At The Hosteller I led a LangChain and RAG booking chatbot that raised self-service bookings by 25% and cut support queries by 30%, on a platform serving 5,000+ daily users.\n\nI care about the unglamorous parts: query plans, render strategy, API contracts that don't break clients, and interfaces that still work on a three-year-old Android phone.",
+    "email": "fazilshaikh20016@gmail.com",
+    "phone": "+91 9167076470",
+    "location": "Mumbai, India",
+    "availability": "Open to full-time and contract work",
+    "yearsOfExperience": 3.5,
+    "socials": [
+      { "label": "GitHub", "url": "https://github.com/ShaikhFazil", "icon": "github" },
+      { "label": "LinkedIn", "url": "https://www.linkedin.com/in/fazil-shaikh-69a501217/", "icon": "linkedin" },
+      { "label": "Email", "url": "mailto:fazilshaikh20016@gmail.com", "icon": "mail" }
+    ]
+  },
+
+  "skills": [
+    { "name": "JavaScript", "category": "Languages", "featured": true, "order": 0 },
+    { "name": "TypeScript", "category": "Languages", "featured": true, "order": 1 },
+    { "name": "Python", "category": "Languages", "featured": true, "order": 2 },
+    { "name": "Java", "category": "Languages", "order": 3 },
+    { "name": "SQL", "category": "Languages", "order": 4 },
+    { "name": "HTML5", "category": "Languages", "order": 5 },
+    { "name": "CSS3", "category": "Languages", "order": 6 },
+
+    { "name": "React.js", "category": "Frontend", "featured": true, "order": 10 },
+    { "name": "Next.js", "category": "Frontend", "featured": true, "order": 11 },
+    { "name": "Tailwind CSS", "category": "Frontend", "featured": true, "order": 12 },
+    { "name": "Redux Toolkit", "category": "Frontend", "order": 13 },
+    { "name": "Zustand", "category": "Frontend", "order": 14 },
+    { "name": "TanStack Query", "category": "Frontend", "order": 15 },
+
+    { "name": "Node.js", "category": "Backend", "featured": true, "order": 20 },
+    { "name": "Express.js", "category": "Backend", "featured": true, "order": 21 },
+    { "name": "FastAPI", "category": "Backend", "order": 22 },
+    { "name": "REST APIs", "category": "Backend", "order": 23 },
+    { "name": "GraphQL", "category": "Backend", "featured": true, "order": 24 },
+    { "name": "JWT Authentication", "category": "Backend", "order": 25 },
+
+    { "name": "MongoDB", "category": "Databases", "featured": true, "order": 30 },
+    { "name": "PostgreSQL", "category": "Databases", "featured": true, "order": 31 },
+    { "name": "Redis", "category": "Databases", "order": 32 },
+    { "name": "Vector Databases", "category": "Databases", "order": 33 },
+
+    { "name": "Redux Toolkit", "category": "State Management & APIs", "order": 40 },
+    { "name": "Zustand", "category": "State Management & APIs", "order": 41 },
+    { "name": "TanStack Query", "category": "State Management & APIs", "order": 42 },
+    { "name": "Axios", "category": "State Management & APIs", "order": 43 },
+    { "name": "GraphQL Clients", "category": "State Management & APIs", "order": 44 },
+
+    { "name": "LLMs", "category": "AI, LLMs & Generative AI", "featured": true, "order": 50 },
+    { "name": "LangChain", "category": "AI, LLMs & Generative AI", "featured": true, "order": 51 },
+    { "name": "LangGraph", "category": "AI, LLMs & Generative AI", "featured": true, "order": 52 },
+    { "name": "RAG", "category": "AI, LLMs & Generative AI", "featured": true, "order": 53 },
+    { "name": "AI Agents", "category": "AI, LLMs & Generative AI", "order": 54 },
+    { "name": "Multi-Agent Systems", "category": "AI, LLMs & Generative AI", "order": 55 },
+    { "name": "Agentic Chatbots", "category": "AI, LLMs & Generative AI", "order": 56 },
+    { "name": "Embeddings", "category": "AI, LLMs & Generative AI", "order": 57 },
+    { "name": "Semantic Search", "category": "AI, LLMs & Generative AI", "order": 58 },
+    { "name": "Prompt Engineering", "category": "AI, LLMs & Generative AI", "order": 59 },
+    { "name": "Tool Calling", "category": "AI, LLMs & Generative AI", "order": 60 },
+
+    { "name": "AWS", "category": "DevOps & Tools", "featured": true, "order": 70 },
+    { "name": "Docker", "category": "DevOps & Tools", "featured": true, "order": 71 },
+    { "name": "Git", "category": "DevOps & Tools", "order": 72 },
+    { "name": "GitHub", "category": "DevOps & Tools", "order": 73 },
+    { "name": "Vercel", "category": "DevOps & Tools", "order": 74 },
+    { "name": "Postman", "category": "DevOps & Tools", "order": 75 }
+  ],
+
+  "experience": [
+    {
+      "company": "The Hosteller",
+      "role": "Full Stack Developer",
+      "location": "Mumbai, India",
+      "startDate": "Mar 2025",
+      "endDate": "",
+      "current": true,
+      "description": "Own booking-platform and CMS work end to end, plus the GenAI layer on top of it.",
+      "achievements": [
+        "Led development of a LangChain and RAG booking chatbot, raising self-service bookings by 25% while lowering support queries by 30%.",
+        "Engineered a booking platform and CMS (React.js, Node.js, GraphQL, MongoDB) serving 5,000+ daily users.",
+        "Reduced page load time by 40% and API response time by 30% through rendering and query optimization.",
+        "Partnered with payment and inventory providers to launch 15+ GraphQL integrations.",
+        "Coordinated 2-week Agile sprints with product, design, and operations teams."
+      ],
+      "technologies": ["React.js", "Node.js", "GraphQL", "MongoDB", "LangChain", "RAG", "Tailwind CSS"],
+      "order": 0
+    },
+    {
+      "company": "Trends Of Media",
+      "role": "Full Stack Developer",
+      "location": "Mumbai, India",
+      "startDate": "Jan 2025",
+      "endDate": "Mar 2025",
+      "current": false,
+      "description": "Client-facing delivery for a digital marketing and creative agency.",
+      "achievements": [
+        "Directed 3 client website builds in under 3 months, including petsalley.co.in and barkatdryfruits.com.",
+        "Built mobile-first, cross-browser interfaces scoring 90+ on Google Lighthouse performance and accessibility.",
+        "Managed client communication from requirements gathering to handover, meeting every deadline."
+      ],
+      "technologies": ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
+      "order": 1
+    },
+    {
+      "company": "WonderLend Hubs",
+      "role": "Platform Engineer",
+      "location": "Mumbai, India",
+      "startDate": "Apr 2024",
+      "endDate": "Jan 2025",
+      "current": false,
+      "description": "Fintech platform work, including compliance-sensitive modules for Shriram Finance.",
+      "achievements": [
+        "Collaborated with the Shriram Finance team to implement compliant core modules for its website.",
+        "Owned an API Monitoring Portal tracking 50+ APIs, detecting incidents 40% sooner.",
+        "Created an AWS Cost Management module that helped the team find 15% in cloud savings."
+      ],
+      "technologies": ["React.js", "Node.js", "REST APIs", "Chart.js", "AWS", "MongoDB"],
+      "order": 2
+    },
+    {
+      "company": "Enmosis Software Solutions",
+      "role": "Front-End Developer",
+      "location": "Mumbai, India",
+      "startDate": "Jan 2023",
+      "endDate": "Dec 2023",
+      "current": false,
+      "description": "Component-library and responsive UI work across a growing product surface.",
+      "achievements": [
+        "Developed 20+ responsive pages and reusable React.js components, so new pages shipped 30% faster.",
+        "Increased mobile engagement by 20% by fixing cross-device and cross-browser layout issues."
+      ],
+      "technologies": ["React.js", "JavaScript", "CSS3", "HTML5"],
+      "order": 3
+    }
+  ],
+
+  "projects": [
+    {
+      "title": "The Hosteller Website & CMS",
+      "summary": "Booking platform and content system for a hostel chain, serving 5,000+ daily users.",
+      "description": "A booking platform and CMS that lets the marketing team own SEO data, blogs, hostel listings and influencer collaborations without a developer in the loop. Rendering and query optimization cut page load time by 40% and API response time by 30%.",
+      "category": "Web Platform",
+      "technologies": ["React.js", "Node.js", "GraphQL", "MongoDB", "Tailwind CSS"],
+      "features": [
+        "CMS for hostels, blogs and SEO metadata",
+        "15+ GraphQL integrations with payment and inventory providers",
+        "40% faster page loads through rendering strategy changes",
+        "Influencer collaboration workflow"
+      ],
+      "featured": true,
+      "year": "2025",
+      "order": 0
+    },
+    {
+      "title": "RAG Booking Chatbot",
+      "summary": "LangChain + RAG assistant that answers guest questions and completes bookings.",
+      "description": "A retrieval-augmented booking assistant built with LangChain over the hostel knowledge base and live inventory. Guests ask in plain language and the agent resolves availability, policies and booking steps, with tool calling into the booking APIs. Self-service bookings rose 25% and support queries dropped 30%.",
+      "category": "Generative AI",
+      "technologies": ["LangChain", "RAG", "LLMs", "Vector Databases", "Node.js", "Python"],
+      "features": [
+        "Retrieval over hostel policies, FAQs and listings",
+        "Tool calling into live booking and availability APIs",
+        "Conversation handoff to human support",
+        "25% increase in self-service bookings"
+      ],
+      "featured": true,
+      "year": "2025",
+      "order": 1
+    },
+    {
+      "title": "Pets Alley",
+      "summary": "E-commerce storefront for pet food, medicine and care essentials.",
+      "description": "Built key features for Pets Alley, a pet shop e-commerce platform where customers browse and buy pet food, medicines and care essentials. Mobile-first build scoring 90+ on Lighthouse performance and accessibility.",
+      "category": "E-commerce",
+      "technologies": ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
+      "features": ["Product catalogue and search", "Cart and checkout flow", "Mobile-first responsive build"],
+      "liveUrl": "https://petsalley.co.in",
+      "featured": true,
+      "year": "2025",
+      "order": 2
+    },
+    {
+      "title": "Barkat Dry Fruits",
+      "summary": "Responsive storefront for a premium dry fruits and healthy snacks retailer.",
+      "description": "A responsive business website for Barkat Dry Fruits, an online store offering premium dry fruits, nuts and healthy snacks. Cross-browser and cross-device tested, built for fast first paint on mobile connections.",
+      "category": "E-commerce",
+      "technologies": ["React.js", "Tailwind CSS", "MongoDB"],
+      "features": ["Product showcase", "Responsive, mobile-first layout", "Cross-browser tested"],
+      "liveUrl": "https://barkatdryfruits.com",
+      "featured": true,
+      "year": "2025",
+      "order": 3
+    },
+    {
+      "title": "Shriram Finance Website",
+      "summary": "Compliance-sensitive bank statement forms for a major NBFC.",
+      "description": "Implemented interactive bank statement forms with layered validation, improving data input quality and usability while staying inside financial compliance requirements.",
+      "category": "Fintech",
+      "technologies": ["React.js", "JavaScript", "Form Validation", "CSS3"],
+      "features": ["Multi-step bank statement forms", "Client and server-side validation", "Compliance-aligned data handling"],
+      "year": "2024",
+      "order": 4
+    },
+    {
+      "title": "API Monitoring & Management Portal",
+      "summary": "Real-time health dashboard tracking 50+ internal and partner APIs.",
+      "description": "A monitoring portal that tracks 50+ APIs in real time, with an on-demand verification action to re-check any endpoint. Incident detection moved 40% earlier.",
+      "category": "Internal Tooling",
+      "technologies": ["React.js", "Node.js", "REST APIs", "MongoDB"],
+      "features": ["Live status for 50+ endpoints", "On-demand endpoint verification", "Incident detection 40% sooner"],
+      "featured": true,
+      "year": "2024",
+      "order": 5
+    },
+    {
+      "title": "AWS Cost Management Module",
+      "summary": "Cloud spend analysis and reporting, modelled on AWS cost reporting.",
+      "description": "A cost analysis tool that breaks cloud spend down by month and date so teams can see where the money goes. Helped surface 15% in cloud savings.",
+      "category": "Internal Tooling",
+      "technologies": ["React.js", "Chart.js", "Node.js", "MongoDB", "AWS"],
+      "features": ["Month and date filtering", "Spend breakdown charts", "Surfaced 15% in savings"],
+      "year": "2024",
+      "order": 6
+    },
+    {
+      "title": "Trends of Media",
+      "summary": "Official site for a digital marketing and creative agency.",
+      "description": "The official website for Trends of Media, a digital marketing and creative agency working with founders, startups and global brands across branding, web development, social media, performance marketing, app development and creative production.",
+      "category": "Marketing Site",
+      "technologies": ["React.js", "Tailwind CSS"],
+      "features": ["Service and case study pages", "Performance-tuned static build"],
+      "year": "2025",
+      "order": 7
+    },
+    {
+      "title": "Sahayata24x7 Health Platform",
+      "summary": "Medicine ordering and doctor appointments in one platform.",
+      "description": "Core features for a health e-commerce platform where users pick a chemist, order medicines and book doctor appointments in a single flow.",
+      "category": "E-commerce",
+      "technologies": ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
+      "features": ["Chemist selection", "Medicine ordering", "Doctor appointment booking"],
+      "year": "2023",
+      "order": 8
+    }
+  ],
+
+  "education": [
+    {
+      "institution": "Fr. Conceicao Rodrigues College of Engineering",
+      "qualification": "B.E. Electronics and Computer Science",
+      "field": "Electronics and Computer Science",
+      "startYear": "Aug 2020",
+      "endYear": "May 2023",
+      "order": 0
+    },
+    {
+      "institution": "Vidyalankar Polytechnic",
+      "qualification": "Diploma in Electronics and Telecommunication (EXTC)",
+      "field": "Electronics and Telecommunication",
+      "startYear": "Jul 2017",
+      "endYear": "May 2020",
+      "order": 1
+    }
+  ],
+
+  "certifications": [
+    { "name": "Full Stack Web Development", "kind": "certification", "order": 0 },
+    { "name": "Java Developer", "kind": "certification", "order": 1 },
+    { "name": "Presented at GMRD, Pune", "kind": "achievement", "order": 2 },
+    { "name": "Presented at Prakalp project competition", "kind": "achievement", "order": 3 },
+    { "name": "Competed in BIT Build Hackathon", "kind": "achievement", "order": 4 }
+  ]
+}

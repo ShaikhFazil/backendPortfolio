@@ -1,0 +1,31 @@
+# See the note in frontend/.dockerignore for why this file matters.
+# The .env line is the important one: your .env holds the live MongoDB Atlas
+# password, the JWT secret and the Cloudinary API secret. None of them may
+# ever be copied into an image.
+
+node_modules
+
+# secrets
+.env
+.env.*
+!.env.example
+
+# version control and CI
+.git
+.gitignore
+.github
+
+# editor and OS noise
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+
+# logs
+*.log
+npm-debug.log*
+
+# docs and deployment files
+README.md
+Dockerfile
+.dockerignore
