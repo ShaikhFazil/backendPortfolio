@@ -1,6 +1,6 @@
 name: Deploy Backend Application on my self-hosted server
 
-on: 
+on:
   push:
     branches:
       - main
@@ -11,20 +11,52 @@ jobs:
     steps:
       - name: Checkout Source
         uses: actions/checkout@v4
+
       - name: Login to docker hub
-        run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}     
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
       - name: Build Docker Image
-        run: docker build -t fazilshaikh24/backendportfolio  .
+        run: docker build -t fazilshaikh24/backendportfolio .
+
       - name: Publish Image to docker hub
-        run: docker push fazilshaikh24/backendportfolio:latest 
- 
+        run: docker push fazilshaikh24/backendportfolio:latest
+
   deploy:
     needs: build
-    runs-on: self-hosted 
+    runs-on: self-hosted
     steps:
       - name: Pull image from docker hub
-        run: docker pull fazilshaikh24/backendportfolio:latest 
+        run: docker pull fazilshaikh24/backendportfolio:latest
+
       - name: Delete old container
-        run: docker rm -f backend-app-container  
+        run: docker rm -f backend-app-container || true
+
       - name: Run Docker Container
-        run: docker run -d -p 5000:5000 --name backend-app-container -e MONGO_PASSWORD='${{ secrets.MONGO_PASSWORD }}' fazilshaikh24/backendportfolio
+        env:
+          PORT: ${{ secrets.PORT }}
+          NODE_ENV: ${{ secrets.NODE_ENV }}
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+          JWT_SECRET: ${{ secrets.JWT_SECRET }}
+          JWT_EXPIRES_IN: ${{ secrets.JWT_EXPIRES_IN }}
+          COOKIE_NAME: ${{ secrets.COOKIE_NAME }}
+          COOKIE_CROSS_SITE: ${{ secrets.COOKIE_CROSS_SITE }}
+          FRONTEND_URL: ${{ secrets.FRONTEND_URL }}
+          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+          CLOUDINARY_FOLDER: ${{ secrets.CLOUDINARY_FOLDER }}
+          MAX_IMAGE_SIZE_MB: ${{ secrets.MAX_IMAGE_SIZE_MB }}
+          MAX_PDF_SIZE_MB: ${{ secrets.MAX_PDF_SIZE_MB }}
+          ADMIN_EMAIL: ${{ secrets.ADMIN_EMAIL }}
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+          ADMIN_NAME: ${{ secrets.ADMIN_NAME }}
+        run: |
+          docker run -d -p 5000:5000 --name backend-app-container \
+            --restart unless-stopped \
+            -e PORT -e NODE_ENV -e MONGODB_URI -e JWT_SECRET \
+            -e JWT_EXPIRES_IN -e COOKIE_NAME -e COOKIE_CROSS_SITE \
+            -e FRONTEND_URL -e CLOUDINARY_CLOUD_NAME \
+            -e CLOUDINARY_API_KEY -e CLOUDINARY_API_SECRET \
+            -e CLOUDINARY_FOLDER -e MAX_IMAGE_SIZE_MB -e MAX_PDF_SIZE_MB \
+            -e ADMIN_EMAIL -e ADMIN_PASSWORD -e ADMIN_NAME \
+            fazilshaikh24/backendportfolio:latest
