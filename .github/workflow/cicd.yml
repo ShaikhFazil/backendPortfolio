@@ -1,0 +1,30 @@
+name: Deploy Backend Application
+
+on: 
+  push:
+    branches:
+      - mern-ec2-docker-ssl
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v4
+      - name: Login to docker hub
+        run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}     
+      - name: Build Docker Image
+        run: docker build -t fazilshaikh24/backendportfolio  .
+      - name: Publish Image to docker hub
+        run: docker push fazilshaikh24/backendportfolio:latest 
+ 
+  deploy:
+    needs: build
+    runs-on: self-hosted 
+    steps:
+      - name: Pull image from docker hub
+        run: docker pull fazilshaikh24/backendportfolio:latest 
+      - name: Delete old container
+        run: docker rm -f backend-app-container  
+      - name: Run Docker Container
+        run: docker run -d -p 5000:5000 --name backend-app-container -e MONGO_PASSWORD='${{ secrets.MONGO_PASSWORD }}' fazilshaikh24/backendportfolio
