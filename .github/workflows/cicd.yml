@@ -3,7 +3,7 @@ name: Deploy Backend Application
 on: 
   push:
     branches:
-      - mern-ec2-docker-ssl
+      - main
 
 jobs:
   build:
